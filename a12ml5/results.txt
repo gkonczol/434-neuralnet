@@ -1,0 +1,18 @@
+Example 1
+The MobileNet model labeled this as robin, American robin, Turdus migratorius with a confidence of 0.9994
+
+ 
+Example 2
+The MobileNet model labeled this as steam locomotive with a confidence of 0.9968
+
+ 
+Example 3
+The MobileNet model labeled this as freight car with a confidence of 0.7368
+
+ 
+Example 4
+The MobileNet model labeled this as fox squirrel, eastern fox squirrel, Sciurus niger with a confidence of 1.0000
+
+ 
+Example 5
+The MobileNet model labeled this as caldron, cauldron with a confidence of 0.7608

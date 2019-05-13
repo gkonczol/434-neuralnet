@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CS434 Neural Networks Gabor Konczol</title>
+      <script src="https://unpkg.com/ml5@0.1.3/dist/ml5.min.js"></script>
+    </head>
+
+    <body>
+      <h1>Image classification using MobileNet</h1>
+      <br>
+      <h2>Example 1</h2>
+      <p>The MobileNet model labeled this as
+      <span id="result1">...</span> with a confidence of
+      <span id="probability1">...</span></p>
+      <img src="https://ml5js.org/docs/assets/img/bird.jpg"
+       crossorigin="anonymous" id="image1" width="400">
+      
+      
+      <script>
+        // The image we want to classify
+        const image1 = document.getElementById('image1');
+        // The result tag in the HTML
+        const result1 = document.getElementById('result1');
+        // The probability tag in the HTML
+        const probability1 = document.getElementById('probability1');
+
+        // Initialize the Image Classifier method with MobileNet
+        const classifier1 = ml5.imageClassifier('MobileNet', function() {
+          console.log('Model Loaded!');
+        });
+
+        // Make a prediction with the selected image
+        // This will return an array with a default of 10 options with their probabilities
+        classifier1.predict(image1, function(err, results) {
+          result1.innerText = results[0].className;
+          probability1.innerText = results[0].probability.toFixed(4);
+        });
+      </script>
+      
+      
+      <br>
+      <h2>Example 2</h2>
+      <p>The MobileNet model labeled this as
+      <span id="result2">...</span> with a confidence of
+      <span id="probability2">...</span></p>
+      <img src="https://live.staticflickr.com/2810/9336480214_743cee225c_k.jpg"
+       crossorigin="anonymous" id="image2" width="400">
+      
+      <script>
+        // The image we want to classify
+        const image2 = document.getElementById('image2');
+        // The result tag in the HTML
+        const result2 = document.getElementById('result2');
+        // The probability tag in the HTML
+        const probability2 = document.getElementById('probability2');
+
+        // Initialize the Image Classifier method with MobileNet
+        const classifier2 = ml5.imageClassifier('MobileNet', function() {
+          console.log('Model Loaded!');
+        });
+
+        // Make a prediction with the selected image
+        // This will return an array with a default of 10 options with their probabilities
+        classifier2.predict(image2, function(err, results) {
+          result2.innerText = results[0].className;
+          probability2.innerText = results[0].probability.toFixed(4);
+        });
+      </script>
+      
+      
+      <br>
+      <h2>Example 3</h2>
+      <p>The MobileNet model labeled this as
+      <span id="result3">...</span> with a confidence of
+      <span id="probability3">...</span></p>
+      <img src="https://live.staticflickr.com/7230/7376810282_63913bd71b_b.jpg"
+       crossorigin="anonymous" id="image3" width="400">
+      
+      <script>
+        // The image we want to classify
+        const image3 = document.getElementById('image3');
+        // The result tag in the HTML
+        const result3 = document.getElementById('result3');
+        // The probability tag in the HTML
+        const probability3 = document.getElementById('probability3');
+
+        // Initialize the Image Classifier method with MobileNet
+        const classifier3 = ml5.imageClassifier('MobileNet', function() {
+          console.log('Model Loaded!');
+        });
+
+        // Make a prediction with the selected image
+        // This will return an array with a default of 10 options with their probabilities
+        classifier3.predict(image3, function(err, results) {
+          result3.innerText = results[0].className;
+          probability3.innerText = results[0].probability.toFixed(4);
+        });
+      </script>
+      
+      
+      <br>
+      <h2>Example 4</h2>
+      <p>The MobileNet model labeled this as
+      <span id="result4">...</span> with a confidence of
+      <span id="probability4">...</span></p>
+      <img src="https://live.staticflickr.com/2849/9533304375_8fc10d25da_k.jpg"
+       crossorigin="anonymous" id="image4" width="400">
+      
+      <script>
+        // The image we want to classify
+        const image4 = document.getElementById('image4');
+        // The result tag in the HTML
+        const result4 = document.getElementById('result4');
+        // The probability tag in the HTML
+        const probability4 = document.getElementById('probability4');
+
+        // Initialize the Image Classifier method with MobileNet
+        const classifier4 = ml5.imageClassifier('MobileNet', function() {
+          console.log('Model Loaded!');
+        });
+
+        // Make a prediction with the selected image
+        // This will return an array with a default of 10 options with their probabilities
+        classifier4.predict(image4, function(err, results) {
+          result4.innerText = results[0].className;
+          probability4.innerText = results[0].probability.toFixed(4);
+        });
+      </script>
+      
+      
+      <br>
+      <h2>Example 5</h2>
+      <p>The MobileNet model labeled this as
+      <span id="result5">...</span> with a confidence of
+      <span id="probability5">...</span></p>
+      <img src="https://live.staticflickr.com/2618/3794473801_3e708c11d8.jpg"
+       crossorigin="anonymous" id="image5" width="400">
+      
+      <script>
+        // The image we want to classify
+        const image5 = document.getElementById('image5');
+        // The result tag in the HTML
+        const result5 = document.getElementById('result5');
+        // The probability tag in the HTML
+        const probability5 = document.getElementById('probability5');
+
+        // Initialize the Image Classifier method with MobileNet
+        const classifier5 = ml5.imageClassifier('MobileNet', function() {
+          console.log('Model Loaded!');
+        });
+
+        // Make a prediction with the selected image
+        // This will return an array with a default of 10 options with their probabilities
+        classifier5.predict(image5, function(err, results) {
+          result5.innerText = results[0].className;
+          probability5.innerText = results[0].probability.toFixed(4);
+        });
+      </script>
+    </body>
+  </html>
